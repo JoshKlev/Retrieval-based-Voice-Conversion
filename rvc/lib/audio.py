@@ -8,7 +8,7 @@ import numpy as np
 
 
 def wav2(i, o, format):
-    inp = av.open(i, "rb")
+    inp = av.open(i, "r")
     if format == "m4a":
         format = "mp4"
     out = av.open(o, "wb", format=format)
